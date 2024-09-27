@@ -7,12 +7,12 @@
 	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
-	background: #FFFFFF;
+	background: url('../../../assets/img/headerBg.png') no-repeat;
 	backdrop-filter: blur(15px);
 
 
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	position: sticky;  // Add this to allow absolute positioning of children
+	position: fixed;  // Add this to allow absolute positioning of children
 }
 .header {
   width: 100%;
@@ -128,7 +128,8 @@
 		background: #ffffff;
 		backdrop-filter: blur(15px);
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		position: sticky;
+		position: fixed;
+		
 	}
 	
 	.burgerMenu {
