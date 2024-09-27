@@ -1,0 +1,189 @@
+
+#header {
+	width: 100%;
+	max-width: 1440px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	background: url('../../../assets/img/headerBg.png') no-repeat;
+	backdrop-filter: blur(15px);
+
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;  // Add this to allow absolute positioning of children
+}
+.header {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+.navigation {
+  display: flex;
+  gap: 116px;  
+  position: absolute; 
+  left: 308px;  
+  top: 34px;  
+}
+
+.navLink {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.98px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: #007bff;
+  }
+
+  span {
+    position: relative;
+    display: inline-block; 
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #007bff;
+      transition: width 0.3s ease;
+    }
+  }
+
+  &:hover span::after {
+    width: 100%;
+  }
+
+  
+  &:nth-child(2) span {  // Assuming "Home" is the second link
+    width: 66px;
+    height: 31px;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  right: 20px;  // Position from the right edge of the header
+  top: 30px;  // Position from the top edge of the header
+}
+
+.langButton,
+.signUpButton {
+
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 20px;
+  font-weight: 700;
+	line-height: 30.98px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.langButton {
+  background-color: #f8f9fa;
+  color: #333;
+  
+  &:hover {
+    background-color: #e9ecef;
+  }
+}
+
+.signUpButton {
+  background-color: #007bff;
+  color: #ffffff;
+  
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+@media (max-width: 768px) {
+	#header {
+		width: 100%;
+		max-width: 1440px;
+		height: 100px;
+		margin: 0 auto;
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-between;
+		background: #ffffff;
+		backdrop-filter: blur(15px);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		position: fixed;
+		
+	}
+	
+	.burgerMenu {
+		display: none; // Мобилдик түзмөктөрдө гана көрсөтүү
+		flex-direction: column;
+		cursor: pointer;
+	
+		.burgerLine {
+			width: 30px;
+			height: 3px;
+			background-color: #333;
+			margin: 4px 0;
+		}
+	}
+	
+	.mobileMenu {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 100px; // Менюнун жогору жагы
+		right: 20px;
+		background-color: #ffffff;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		z-index: 1000; // Жогорку катмарда көрсөтүү
+	}
+	
+	@media (max-width: 768px) {
+		.header {
+			flex-direction: column;
+			height: auto;
+			padding: 20px;
+		}
+	
+		.navigation {
+			display: none; // Мобилдик түзмөктөрдө навигацияны жашыруу
+		}
+	
+		.burgerMenu {
+			display: flex; // Мобилдик түзмөктөрдө бургер менюну көрсөтүү
+		}
+	
+		.mobileMenu {
+			display: flex; // Бургер меню ачылганда көрсөтүү
+		}
+	
+		.actions {
+			position: static;
+			flex-direction: column;
+			width: 100%;
+		}
+	
+		.langButton,
+		.signUpButton {
+			width: 100%;
+		}
+	}
+}
