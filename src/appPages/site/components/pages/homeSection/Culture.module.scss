@@ -1,0 +1,248 @@
+.culture {
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+
+    h2 {
+      font-size: 60px;
+      color: #004a60;
+    }
+    .cultureActions {
+      background-image: url("../../../assets//img/culturebg.png");
+      background-size: cover;
+      width: 100%;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 50px;
+      .cultureBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        img {
+          width: 50%;
+          height: 450px;
+          border-radius: 10px;
+        }
+        .cultureBlockText {
+          width: 25%;
+          height: 450px;
+          background: white;
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 20px;
+          position: relative;
+          h3 {
+            font-size: 20px;
+            color: #004a60;
+          }
+          p {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          button {
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            background: #004a60;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            font-size: 15px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+        }
+      }
+      .cultureBlockSlide {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+  .culture {
+    .content {
+      .cultureActions {
+        height: 500px;
+        .cultureBlock {
+          img {
+            width: 60%;
+            height: 370px;
+          }
+          .cultureBlockText {
+            height: 370px;
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .culture {
+    .content {
+      .cultureActions {
+        height: 500px;
+        .cultureBlock {
+          img {
+            width: 60%;
+            height: 350px;
+          }
+          .cultureBlockText {
+            height: 350px;
+            p {
+              font-size: 12px;
+              line-height: 15px;
+            }
+            button {
+              bottom: 20px;
+              width: 70px;
+              height: 20px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .culture {
+    .content {
+      h2 {
+        font-size: 40px;
+      }
+      .cultureActions {
+        height: 400px;
+        .cultureBlock {
+          img {
+            width: 50%;
+            height: 250px;
+          }
+          .cultureBlockText {
+            height: 250px;
+            p {
+              font-size: 10px;
+              line-height: 12px;
+            }
+            button {
+              bottom: 5px;
+              width: 70px;
+              height: 20px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .culture {
+    .content {
+      h2 {
+        font-size: 40px;
+      }
+      .cultureActions {
+        height: 600px;
+        gap: 20px;
+        .cultureBlock {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          img {
+            width: 100%;
+            height: 250px;
+          }
+          .cultureBlockText {
+            height: 250px;
+            width: 350px;
+            p {
+              font-size: 13px;
+              line-height: 15px;
+            }
+            button {
+              bottom: 25px;
+              width: 70px;
+              height: 20px;
+              font-size: 10px;
+            }
+          }
+        }
+        .cultureBlockSlide {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .culture {
+    .content {
+      h2 {
+        font-size: 40px;
+      }
+      .cultureActions {
+        height: 600px;
+        gap: 20px;
+        .cultureBlock {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          img {
+            width: 100%;
+            height: 200px;
+          }
+          .cultureBlockText {
+            height: 250px;
+            width: 100%;
+            p {
+              font-size: 10px;
+              line-height: 15px;
+            }
+            button {
+              bottom: 15px;
+              width: 70px;
+              height: 20px;
+              font-size: 10px;
+            }
+          }
+        }
+        .cultureBlockSlide {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

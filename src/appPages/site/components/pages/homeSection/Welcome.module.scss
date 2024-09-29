@@ -1,29 +1,258 @@
 .welcome {
-	background: url('../../../assets/img/wellcomeImgBg.png') no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  background: url("../../../assets/img/wellcomeImgBg.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
 
-	&__title {
-		font-family: var(--font5);
-		font-weight: 400;
-		font-size: 80px;
-		line-height: 125%;
-		text-align: center;
-		color: #fff;
-		margin-bottom: 50px;
-	}
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
 
-	&__input {
-		border-radius: 30px;
-		padding: 11px 475px 11px 22px;
-		width: 688px;
-		height: 56px;
-		background: #e5e4e9;
-		border: none;
-	}
+    .vk {
+      width: 25px;
+      height: 25px;
+    }
+    .email {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    h1 {
+      font-size: 80px;
+      display: flex;
+      text-align: center;
+    }
+    .inputs {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+      h6 {
+        width: 40px;
+        height: 40px;
+        background: #004a60;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      .burger {
+        background-image: url("../../../../../assets//img/burgerbg.png");
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding-inline: 20px;
+        padding-block: 10px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        border-radius: 10px;
+        gap: 10px;
+        a {
+          color: #004a60;
+          font-weight: 600;
+        }
+      }
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 600px;
+      height: 100%;
+      background: white;
+      padding-inline: 20px;
+      border-radius: 50px;
+      a {
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      input {
+        outline: none;
+        padding-inline: 10px;
+        border: none;
+        width: 95%;
+        height: 40px;
+        font-size: 17px;
+      }
+    }
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      width: 600px;
+      display: flex;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+  .welcome {
+    .logo {
+      right: 50px;
+    }
+  }
+}
+@media (max-width: 920px) {
+  .welcome {
+    .content {
+      h1 {
+        font-size: 50px;
+      }
+      .input {
+        width: 400px;
+      }
+      p {
+        font-size: 20px;
+        width: 450px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .welcome {
+    .log {
+      img {
+        display: none;
+      }
+    }
+    .content {
+      h1 {
+        font-size: 50px;
+      }
+      .input {
+        width: 400px;
+      }
+      p {
+        font-size: 20px;
+        width: 450px;
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .welcome {
+    height: 60vh;
+    .logo {
+      img {
+        display: none;
+      }
+    }
+    .content {
+      h1 {
+        font-size: 30px;
+      }
+      .inputs {
+        .input {
+          width: 200px;
+          height: 25px;
+          a {
+            font-size: 15px;
+          }
+          input {
+            height: 100%;
+            font-size: 15px;
+          }
+        }
+        h6 {
+          width: 30px;
+          height: 30px;
+          font-size: 15px;
+        }
+        .burger {
+          width: 120px;
+          height: 170px;
+          display: flex;
+          align-self: start;
+          flex-direction: column;
+          gap: 5px;
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        width: 350px;
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .welcome {
+    height: 160px;
+    .logo {
+      img {
+        display: none;
+      }
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-size: 20px;
+      }
+      .inputs {
+        .input {
+          width: 200px;
+          height: 17px;
+          a {
+            font-size: 10px;
+          }
+          input {
+            height: 100%;
+            font-size: 10px;
+          }
+        }
+        .burger {
+          width: 80px;
+          height: 120px;
+          display: flex;
+          align-items: start;
+          gap: 5px;
+          a {
+            font-size: 8px;
+          }
+        }
+        h6 {
+          width: 20px;
+          height: 20px;
+          font-size: 10px;
+        }
+      }
+      p {
+        font-size: 10px;
+        line-height: 15px;
+        width: 250px;
+      }
+    }
+  }
 }

@@ -1,73 +1,69 @@
 "use client";
 
-import React, { useState } from "react";
 import Link from "next/link";
-import styles from "./Header.module.scss";
+import React, { useState } from "react";
+import scss from "./Header.module.scss";
+import { RiMenu3Fill } from "react-icons/ri";
+import { IoCloseSharp } from "react-icons/io5";
 
-
-const Header: React.FC = () => {
-  const [language, setLanguage] = useState("eng");
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Бургер меню үчүн
-
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setLanguage(event.target.value);
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Менюну ачуу/жабуу
-  };
-
+const Header = () => {
+  const [burgerOpen, setBurgerOpen] = useState(false);
   return (
-    <div id={styles.header}>
-      <header className={styles.header}>
-        <nav className={styles.navigation}>
-          <Link href="/home" className={styles.navLink}>
-            <span>Home</span>
-          </Link>
-          <Link href="/regions" className={styles.navLink}>
-            <span>Regions</span>
-          </Link>
-          <Link href="/culture" className={styles.navLink}>
-            <span>Culture</span>
-          </Link>
-          <Link href="/routes" className={styles.navLink}>
-            <span>Routes</span>
-          </Link>
-        </nav>
-        <div className={styles.actions}>
-          <select
-            className={styles.langButton}
-            value={language}
-            onChange={handleLanguageChange}
-          >
-            <option value="eng">Eng</option>
-            <option value="rus">Rus</option>
-            <option value="kgz">Kgz</option>
-          </select>
-          <button className={styles.signUpButton}>Sign up</button>
-        </div>
-        <div className={styles.burgerMenu} onClick={toggleMenu}>
-          <div className={styles.burgerLine}></div>
-          <div className={styles.burgerLine}></div>
-          <div className={styles.burgerLine}></div>
+    <div id={scss.header}>
+      <header className={scss.header}>
+        <div className="container">
+          <div className={scss.content}>
+            <div className={scss.logo}>
+              <h1>Logo</h1>
+            </div>
+            <nav className={scss.navigation}>
+              <Link href="/" className={scss.navLink}>
+                <span>Home</span>
+              </Link>
+              <Link href="/" className={scss.navLink}>
+                <span>Regions</span>
+              </Link>
+              <Link href="/" className={scss.navLink}>
+                <span>Culture</span>
+              </Link>
+              <Link href="/" className={scss.navLink}>
+                <span>Gallery</span>
+              </Link>
+              <Link href="/" className={scss.navLink}>
+                <span>Routes</span>
+              </Link>
+            </nav>
+            <div className={scss.actions}>
+              <select>
+                <option value="eng">Eng</option>
+                <option value="rus">Rus</option>
+                <option value="kgz">Kgz</option>
+              </select>
+              <button>Sign up</button>
+              <a
+                className={scss.burgerIcon}
+                onClick={() => setBurgerOpen(!burgerOpen)}
+              >
+                <RiMenu3Fill />
+              </a>
+              {burgerOpen ? (
+                <div className={scss.burgerMenu}>
+                  <h6 onClick={() => setBurgerOpen(false)}>
+                    <IoCloseSharp />
+                  </h6>
+                  <div className={scss.components}>
+                    <Link href="/">Home</Link>
+                    <Link href="/">Regions</Link>
+                    <Link href="/">Culture</Link>
+                    <Link href="/">Gallery</Link>
+                    <Link href="/">Routes</Link>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          </div>
         </div>
       </header>
-      {isMenuOpen && (
-        <div className={styles.mobileMenu}>
-          <Link href="/home" className={styles.navLink}>
-            <span>Home</span>
-          </Link>
-          <Link href="/regions" className={styles.navLink}>
-            <span>Regions</span>
-          </Link>
-          <Link href="/culture" className={styles.navLink}>
-            <span>Culture</span>
-          </Link>
-          <Link href="/routes" className={styles.navLink}>
-            <span>Routes</span>
-          </Link>
-        </div>
-      )}
     </div>
   );
 };

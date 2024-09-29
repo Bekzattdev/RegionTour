@@ -1,0 +1,218 @@
+.city {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  .kyrgyzstan {
+    background-image: url("../../../../../assets/img/citybg.png");
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    padding-top: 10px;
+    padding-inline: 40px;
+    h2 {
+      font-size: 60px;
+      color: white;
+      font-weight: 600;
+    }
+    p {
+      width: 700px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-top: 10px;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: start;
+    gap: 40px;
+    h1 {
+      display: none;
+    }
+    .cityText {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 60px;
+        color: #004a60;
+      }
+      p {
+        font-size: 23px;
+        width: 700px;
+        line-height: 33px;
+        font-weight: 500;
+        letter-spacing: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+  .city {
+    .content {
+      .cityText {
+        h1 {
+          display: block;
+        }
+        p {
+          font-size: 20px;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .city {
+    .kyrgyzstan {
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 25px;
+      }
+    }
+    .content {
+      img {
+        width: 40%;
+        height: 200px;
+      }
+      .cityText {
+        h1 {
+          display: block;
+          font-size: 40px;
+        }
+        p {
+          width: 500px;
+          font-size: 17px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .city {
+    .kyrgyzstan {
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .content {
+      img {
+        width: 40%;
+        height: 200px;
+      }
+      .cityText {
+        h1 {
+          display: block;
+          font-size: 40px;
+        }
+        p {
+          width: 430px;
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .city {
+    .kyrgyzstan {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 5px;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 11px;
+        line-height: 15px;
+        width: 380px;
+      }
+    }
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        display: block;
+        color: #004a60;
+        font-size: 30px;
+      }
+      img {
+        width: 80%;
+        height: 180px;
+      }
+      .cityText {
+        h1 {
+          display: none;
+        }
+        p {
+          width: 330px;
+          font-size: 11px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .city {
+    .kyrgyzstan {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 5px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 10px;
+        line-height: 15px;
+        width: 250px;
+      }
+    }
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        display: block;
+        color: #004a60;
+        font-size: 25px;
+      }
+      img {
+        width: 100%;
+        // height: ;
+      }
+      .cityText {
+        h1 {
+          display: none;
+        }
+        p {
+          width: 250px;
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
