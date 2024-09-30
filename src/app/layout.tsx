@@ -3,7 +3,7 @@ import "./globals.scss";
 import RootLayoutClient from "./layout.client";
 
 export const metadata: Metadata = {
-  title: "7duban_tur",
+  title: "RegionTour",
   description: "Tours to 7 regions in Kyrgyzstan",
 };
 
