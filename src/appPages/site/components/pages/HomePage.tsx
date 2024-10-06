@@ -1,14 +1,14 @@
 "use client";
+import React from "react";
 import Welcome from "./homeSection/Welcome";
-import { CreateData } from "./routesSection/calendare/CreateData";
+import RoutesPage from "./routesSection/RoutesPage";
 
 const HomePage = () => {
-  console.log("createData", CreateData({ locale: "en-US" }));
-
   return (
-    <div>
+    <>
       <Welcome />
-    </div>
+      <RoutesPage />
+    </>
   );
 };
 
