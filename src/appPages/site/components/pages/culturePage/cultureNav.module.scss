@@ -1,0 +1,126 @@
+.container {
+	display: flex;
+	background: url('./cultureData/cultureImages/cultureNav.png') no-repeat;
+	max-width: 1200px;
+	min-height: 700px;
+	margin: 0 auto;
+	background-size: cover;
+
+	padding-left: 40px;
+	margin-top: 10px;
+}
+
+.content {
+	margin-top:60px ;
+	border-radius: 5px;
+	max-width: 400px;
+	max-height: 567px;
+	width: 100%;
+	flex: 1;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+}
+
+.title {
+	font-size: 2.5rem;
+	color: #1a3b5d;
+	margin-bottom: 1rem;
+	width: 275px;
+
+}
+
+.description {
+	font-size: 0.9rem;
+
+	margin-bottom: 2rem;
+	line-height: 1.6;
+	font-family: Frank Ruhl Libre;
+font-size: 14px;
+font-weight: 500;
+line-height: 18.07px;
+
+color: #242424;
+width: 275px;
+height: 216px;
+top: 319px;
+left: 200px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+}
+
+.navItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+	color: #004A60;
+	font-family: Frank Ruhl Libre;
+font-size: 14px;
+font-weight: 700;
+line-height: 18.07px;
+text-align: center;
+
+	text-decoration: none;
+	font-size: 1rem;
+	border-bottom: 1px solid #e0e0e0;
+	width: 275px;
+
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&:hover {
+		color: #3a6ea5;
+	}
+}
+
+.arrow {
+	font-size: 1.2rem;
+	width: 12px;
+height: 8px;
+top: 8px;
+left: 18px;
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+angle: -180 deg;
+
+color: #004A60
+}
+
+.imageContainer {
+	flex: 1;
+	position: relative;
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		background: white;
+		padding: 10px;
+		
+	}
+
+	.imageContainer {
+		display: block;
+		height: 300px;
+		width: 100%;
+		img{
+			max-width: 700px;
+			width: 100%;
+			height: 300px;
+		}
+		
+	}
+}

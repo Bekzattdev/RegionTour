@@ -1,189 +1,207 @@
 
-#header {
-	width: 100%;
-	max-width: 1440px;
-	height: 100px;
-	margin: 0 auto;
-	padding: 0 20px;
-	display: flex;
-	justify-content: space-between;
-	background: url('../../../assets/img/headerBg.png') no-repeat;
-	backdrop-filter: blur(15px);
+// #header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 1000;
+// }
 
+.headerWrapper {
+  position: relative;
 
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	position: fixed;  // Add this to allow absolute positioning of children
+	z-index: 100 !important;
 }
+
 .header {
-  width: 100%;
-  max-width: 1440px;
   height: 100px;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-
+  padding: 1rem;
+  background: url('../../../assets/img/headerBg.png') no-repeat;
+  background-size: cover;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; 
 }
 
-.navigation {
-  display: flex;
-  gap: 116px;  
-  position: absolute; 
-  left: 308px;  
-  top: 34px;  
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.desktopNav {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 2.3rem;
+  }
+}
+
+.navItem {
+  position: relative;
+  &:hover .subMenu {
+    display: block;
+  }
 }
 
 .navLink {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30.98px;
   text-decoration: none;
   color: #333;
   transition: color 0.3s ease;
-  
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
   &:hover {
     color: #007bff;
   }
+}
 
-  span {
-    position: relative;
-    display: inline-block; 
-    
-    &::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background-color: #007bff;
-      transition: width 0.3s ease;
-    }
-  }
+.subMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
 
-  &:hover span::after {
-    width: 100%;
-  }
-
-  
-  &:nth-child(2) span {  // Assuming "Home" is the second link
-    width: 66px;
-    height: 31px;
+.subNavLink {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  &:hover {
+    background-color: #f0f0f0;
   }
 }
 
 .actions {
   display: flex;
-  gap: 15px;
-  position: absolute;
-  right: 20px;  // Position from the right edge of the header
-  top: 30px;  // Position from the top edge of the header
-}
-
-.langButton,
-.signUpButton {
-
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 20px;
-  font-weight: 700;
-	line-height: 30.98px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  align-items: center;
+  gap: 1rem;
 }
 
 .langButton {
-  background-color: #f8f9fa;
-  color: #333;
-  
-  &:hover {
-    background-color: #e9ecef;
-  }
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: transparent;
+  min-width: 100px;
 }
 
 .signUpButton {
+  padding: 0.5rem 1.5rem;
   background-color: #007bff;
-  color: #ffffff;
-  
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
   &:hover {
     background-color: #0056b3;
   }
 }
 
-@media (max-width: 768px) {
-	#header {
-		width: 100%;
-		max-width: 1440px;
-		height: 100px;
-		margin: 0 auto;
-		padding: 0 20px;
-		display: flex;
-		justify-content: space-between;
-		background: #ffffff;
-		backdrop-filter: blur(15px);
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		position: fixed;
-		
-	}
-	
-	.burgerMenu {
-		display: none; // Мобилдик түзмөктөрдө гана көрсөтүү
-		flex-direction: column;
-		cursor: pointer;
-	
-		.burgerLine {
-			width: 30px;
-			height: 3px;
-			background-color: #333;
-			margin: 4px 0;
-		}
-	}
-	
-	.mobileMenu {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top: 100px; // Менюнун жогору жагы
-		right: 20px;
-		background-color: #ffffff;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		z-index: 1000; // Жогорку катмарда көрсөтүү
-	}
-	
-	@media (max-width: 768px) {
-		.header {
-			flex-direction: column;
-			height: auto;
-			padding: 20px;
-		}
-	
-		.navigation {
-			display: none; // Мобилдик түзмөктөрдө навигацияны жашыруу
-		}
-	
-		.burgerMenu {
-			display: flex; // Мобилдик түзмөктөрдө бургер менюну көрсөтүү
-		}
-	
-		.mobileMenu {
-			display: flex; // Бургер меню ачылганда көрсөтүү
-		}
-	
-		.actions {
-			position: static;
-			flex-direction: column;
-			width: 100%;
-		}
-	
-		.langButton,
-		.signUpButton {
-			width: 100%;
-		}
-	}
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burgerLine {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+  &.open {
+    &:first-child {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileNavItem {
+  border-bottom: 1px solid #ddd;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.mobileNavLinkWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileNavLink {
+  flex-grow: 1;
+  padding: 0.5rem 0;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+.arrow {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+.mobileSubMenu {
+  padding-left: 1rem;
+}
+
+.mobileSubNavLink {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-size: 1.3rem;
 }
