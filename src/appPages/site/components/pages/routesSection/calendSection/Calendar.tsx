@@ -6,9 +6,11 @@ const MyCalendar: React.FC = () => {
   const [date, setDate] = React.useState<Date | Date[]>(new Date());
 
   return (
-    <>
+    <div
+      style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
+    >
       <Calendar onChange={setDate} value={date} />
-    </>
+    </div>
   );
 };
 

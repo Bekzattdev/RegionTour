@@ -6,7 +6,7 @@ import RoutesPage from "./routesSection/RoutesPage";
 const HomePage = () => {
   return (
     <>
-      <Welcome />
+      {/* <Welcome /> */}
       <RoutesPage />
     </>
   );

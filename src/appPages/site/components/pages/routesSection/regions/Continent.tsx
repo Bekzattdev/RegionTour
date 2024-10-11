@@ -8,47 +8,71 @@ import jalalAbad from "../../../../../../assets/routes/jalalAbod.svg";
 import naryn from "../../../../../../assets/routes/Narun.svg";
 import osh from "../../../../../../assets/routes/Osh.svg";
 import batken from "../../../../../../assets/routes/Batken.svg";
+import MapPage from "../map/MapPage";
+import { useState } from "react";
+import MyCalendar from "../calendSection/Calendar";
 
 const Continent = () => {
+  const [showMap, setShowMap] = useState(false);
+  const [showCalendar, setShowCalendar] = useState(false);
+  const regions = [
+    {
+      reg: talas,
+      name: "Talas",
+    },
+    {
+      reg: chui,
+      name: "Chui",
+    },
+    {
+      reg: issykKol,
+      name: "Issyk-Kyl",
+    },
+    {
+      reg: jalalAbad,
+      name: "Jalal-Abad",
+    },
+    {
+      reg: naryn,
+      name: "Naryn",
+    },
+    {
+      reg: osh,
+      name: "Osh",
+    },
+    {
+      reg: batken,
+      name: "Batken",
+    },
+  ];
+
+  const handleClick = () => {
+    setShowCalendar(true);
+    setTimeout(() => {
+      setShowMap(true);
+    }, 2000);
+  };
   return (
     <div className={scss.Continent}>
       <div className={scss.content}>
         <div className={scss.from}>
           <input type="text" />
           <input type="text" placeholder="Where?" />
-          <button>Go</button>
+          <button onClick={handleClick}>Go</button>
         </div>
         <nav>
-          <div>
-            <Image src={talas} alt="Talas" />
-            <h2>Talas</h2>
-          </div>
-          <div>
-            <Image src={chui} alt="Chui" />
-            <h2>Chui</h2>
-          </div>{" "}
-          <div>
-            <Image src={issykKol} alt="Issyk Kyl" />
-            <h2>Issyk-Kyl</h2>
-          </div>{" "}
-          <div>
-            <Image src={jalalAbad} alt="Jalal-Abad" />
-            <h2>Jalal-Abad</h2>
-          </div>{" "}
-          <div>
-            <Image src={naryn} alt="Naryn" />
-            <h2>Naryn</h2>
-          </div>{" "}
-          <div>
-            <Image src={osh} alt="Talas" />
-            <h2>Osh</h2>
-          </div>
-          <div>
-            <Image src={batken} alt="Batken" />
-            <h2>Batken</h2>
+          <div className={scss.regs}>
+            {regions.map((el) => (
+              <div>
+                <Image src={el.reg} alt="regions" />
+                <h2>{el.name}</h2>
+              </div>
+            ))}
           </div>
         </nav>
       </div>
+      {showCalendar && <MyCalendar />}
+      {showMap && <MapPage />}
     </div>
   );
 };
