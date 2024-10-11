@@ -1,0 +1,53 @@
+.attractions {
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    h2 {
+      font-size: 60px;
+      color: #004a60;
+    }
+    .attractionsBlocks {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 920px) {
+}
+@media (max-width: 768px) {
+  .attractions {
+    .content {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .attractions {
+    .content {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .attractions {
+    .content {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}

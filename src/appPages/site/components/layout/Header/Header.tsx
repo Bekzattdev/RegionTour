@@ -5,9 +5,33 @@ import React, { useState } from "react";
 import scss from "./Header.module.scss";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [burgerOpen, setBurgerOpen] = useState(false);
+  const pathname = usePathname();
+  const LinkHeader = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Regions",
+      href: "/regions/talas",
+    },
+    {
+      name: "Culture",
+      href: "/hgck",
+    },
+    {
+      name: "Gallerey",
+      href: "/kjn",
+    },
+    {
+      name: "Routes",
+      href: "/lkk",
+    },
+  ];
   return (
     <div id={scss.header}>
       <header className={scss.header}>
@@ -16,23 +40,20 @@ const Header = () => {
             <div className={scss.logo}>
               <h1>Logo</h1>
             </div>
-            <nav className={scss.navigation}>
-              <Link href="/" className={scss.navLink}>
-                <span>Home</span>
-              </Link>
-              <Link href="/" className={scss.navLink}>
-                <span>Regions</span>
-              </Link>
-              <Link href="/" className={scss.navLink}>
-                <span>Culture</span>
-              </Link>
-              <Link href="/" className={scss.navLink}>
-                <span>Gallery</span>
-              </Link>
-              <Link href="/" className={scss.navLink}>
-                <span>Routes</span>
-              </Link>
-            </nav>
+            {LinkHeader.map((el) => (
+              <nav className={scss.navigation}>
+                <Link
+                  href={el.href}
+                  className={
+                    pathname === el.href
+                      ? `${scss.navLink} ${scss.active}`
+                      : `${scss.navLink}`
+                  }
+                >
+                  <span>{el.name}</span>
+                </Link>
+              </nav>
+            ))}
             <div className={scss.actions}>
               <select>
                 <option value="eng">Eng</option>
@@ -53,7 +74,7 @@ const Header = () => {
                   </h6>
                   <div className={scss.components}>
                     <Link href="/">Home</Link>
-                    <Link href="/">Regions</Link>
+                    <Link href="/regions/talas">Regions</Link>
                     <Link href="/">Culture</Link>
                     <Link href="/">Gallery</Link>
                     <Link href="/">Routes</Link>

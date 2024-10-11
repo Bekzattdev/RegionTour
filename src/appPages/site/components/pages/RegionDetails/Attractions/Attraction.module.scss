@@ -1,0 +1,279 @@
+.main {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    .mainText {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      h2 {
+        font-size: 30px;
+        color: #004c60;
+      }
+      h6 {
+        font-size: 15px;
+        font-weight: 600;
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+    .attractionBlocks {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .attractionBlock {
+        position: relative;
+        width: 340px;
+        height: 300px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        .like {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 40px;
+          color: white;
+        }
+        img {
+          width: 100%;
+          height: 60%;
+          object-fit: cover;
+        }
+        .attractionBlockText {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          padding-inline: 20px;
+          gap: 10px;
+          h5 {
+            font-weight: 400;
+            color: rgb(78, 77, 77);
+          }
+          .attractionBlockRating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            a {
+              color: yellow;
+              font-size: 20px;
+            }
+          }
+          .nextRead {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    margin-top: 30px;
+    .content {
+      .attractionBlocks {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .main {
+    margin-top: 30px;
+    .content {
+      .attractionBlocks {
+        gap: 20px;
+        .attractionBlock {
+          .attractionBlockText {
+            h3 {
+              font-size: 15px;
+            }
+            .attractionBlockRating {
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .main {
+    margin-top: 30px;
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      .attractionBlocks {
+        gap: 20px;
+        flex-wrap: wrap;
+        .attractionBlock {
+          width: 250px;
+          height: 250px;
+          .attractionBlockText {
+            h3 {
+              font-size: 15px;
+            }
+            .attractionBlockRating {
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-block: 30px;
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      .mainText {
+        h2 {
+          width: 60%;
+          font-size: 25px;
+        }
+        h6 {
+          font-size: 15px;
+        }
+      }
+      .attractionBlocks {
+        gap: 40px;
+        flex-wrap: wrap;
+        .attractionBlock {
+          width: 250px;
+          height: 250px;
+          .like {
+            font-size: 30px;
+          }
+          .attractionBlockText {
+            padding-inline: 5px;
+            h3 {
+              font-size: 15px;
+            }
+            .attractionBlockRating {
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .main {
+    margin-block: 30px;
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      .mainText {
+        h2 {
+          width: 70%;
+          font-size: 15px;
+        }
+        h6 {
+          font-size: 10px;
+        }
+      }
+      .attractionBlocks {
+        gap: 40px;
+        flex-wrap: wrap;
+        .attractionBlock {
+          width: 250px;
+          height: 250px;
+          .like {
+            font-size: 30px;
+          }
+          .attractionBlockText {
+            padding-inline: 5px;
+            h3 {
+              font-size: 15px;
+            }
+            .attractionBlockRating {
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .main {
+    margin-block: 30px;
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      .mainText {
+        flex-direction: column;
+        align-items: start;
+        h2 {
+          width: 70%;
+          font-size: 15px;
+        }
+        h6 {
+          font-size: 8px;
+          display: flex;
+          flex-direction: row-reverse;
+          width: 100%;
+        }
+      }
+      .attractionBlocks {
+        gap: 20px;
+        flex-wrap: wrap;
+        .attractionBlock {
+          width: 200px;
+          height: 200px;
+          .like {
+            font-size: 25px;
+          }
+          .attractionBlockText {
+            padding-inline: 5px;
+            h3 {
+              font-size: 12px;
+            }
+            .attractionBlockRating {
+              a {
+                font-size: 10px;
+              }
+              h5 {
+                font-size: 10px;
+              }
+            }
+            h5 {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

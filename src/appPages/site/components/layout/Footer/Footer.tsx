@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import scss from "./Footer.module.scss";
 //img
@@ -6,8 +7,10 @@ import facebook from "../../../../../assets/img/facebooklogo.svg";
 import vk from "../../../../../assets/img/vklogo.png";
 import email from "../../../../../assets/img/emaillogo.webp";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer id={scss.footer}>
       <div className={scss.footer}>

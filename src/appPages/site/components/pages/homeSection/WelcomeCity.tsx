@@ -33,7 +33,7 @@ const WelcomeCity = () => {
         </div>
       </div>
     </section>
-  );
+  ); 
 };
 
 export default WelcomeCity;

@@ -26,19 +26,18 @@
         color: #004a60;
       }
       .navigation {
-        width: 50%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         .navLink {
           color: #004a60;
           font-size: 24px;
           font-weight: 700;
           text-decoration: none;
           transition: color 0.3s ease;
-          &:hover {
-            color: white;
-          }
+        }
+        .active {
+          color: white;
         }
       }
       .actions {

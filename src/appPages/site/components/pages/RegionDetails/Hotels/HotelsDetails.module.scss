@@ -1,0 +1,689 @@
+.main {
+  margin-top: 50px;
+  .content {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    h2 {
+      font-size: 30px; 
+      color: #004c60;
+    }
+    .info {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 40px;
+      .hotelImg {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        img {
+          width: 40%;
+          object-fit: cover;
+        }
+        .hotelImgFood {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 30%;
+          img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+      .infoDetails {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+        .infoAppartment {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 70%;
+          gap: 40px;
+          .mainAllText {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .mainText {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 10px;
+              h2 {
+                color: black;
+              }
+              h6 {
+                font-size: 15px;
+                color: #9a9a9a;
+                font-weight: 500;
+              }
+            }
+            .mainIcons {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              a {
+                font-size: 25px;
+              }
+            }
+          }
+          .appartmentBlocks {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .appartmentBlock {
+              width: 23%;
+              height: 200px;
+              background: #eff0f2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              gap: 5px;
+              border-radius: 10px;
+              a {
+                font-size: 40px;
+              }
+              h6 {
+                font-size: 15px;
+              }
+            }
+          }
+          .appartmentDes {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              color: #9a9a9a;
+              font-weight: 400;
+              width: 100%;
+            }
+          }
+          .amenities {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            h3 {
+              font-size: 20px;
+            }
+            .amenitiesDetails {
+              display: flex;
+              align-items: start;
+              justify-content: space-between;
+              width: 70%;
+              .amenitiesBlocks {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 10px;
+              }
+              .amenitiesBlock {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                a {
+                  font-size: 25px;
+                }
+                h6 {
+                  font-size: 15px;
+                  font-weight: 400;
+                }
+              }
+            }
+            button {
+              padding-block: 15px;
+              padding-inline: 40px;
+              background: transparent;
+              border: 2px solid black;
+              border-radius: 5px;
+              font-size: 15px;
+              font-weight: 600;
+            }
+          }
+          .hygiene {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            h3 {
+              font-size: 20px;
+            }
+            .hygieneDetails {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 70%;
+              .hygieneBlocks {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 10px;
+              }
+              .hygieneBlock {
+                display: flex;
+                align-items: start;
+                gap: 5px;
+                h5 {
+                  font-size: 15px;
+                  font-weight: 400;
+                }
+                a {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+        }
+        .infoAllMoney {
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .infoCarta {
+            width: 75%;
+            height: 400px;
+            box-shadow: 0px 0px 5px gray;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            gap: 40px;
+            border-radius: 10px;
+            hr {
+              width: 100%;
+            }
+            .period {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 10px;
+              h5 {
+                color: #9a9a9a;
+                font-weight: 500;
+              }
+            }
+            button {
+              padding-block: 10px;
+              width: 100%;
+              background: #004c60;
+              color: white;
+              font-weight: 600;
+              font-size: 15px;
+              border-radius: 5px;
+              border: none;
+            }
+            .contact {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              h4 {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    .content {
+      .info {
+        .infoDetails {
+          .infoAllMoney {
+            .infoCarta {
+              width: 80%;
+              .contact {
+                h4 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    .content {
+      h2 {
+      }
+      .info {
+        .infoDetails {
+          .infoAppartment {
+            .appartmentBlocks {
+              .appartmentBlock {
+                height: 150px;
+                a {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .infoAllMoney {
+            .infoCarta {
+              width: 80%;
+              height: 300px;
+              gap: 20px;
+              .contact {
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                h4 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .main {
+    .content {
+      h2 {
+        font-size: 25px;
+      }
+      .info {
+        .hotelImg {
+          height: 300px;
+        }
+        .infoDetails {
+          .infoAppartment {
+            .appartmentBlocks {
+              .appartmentBlock {
+                height: 120px;
+                a {
+                  font-size: 30px;
+                }
+                h6 {
+                  font-size: 10px;
+                }
+              }
+            }
+            .appartmentDes {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+          .infoAllMoney {
+            .infoCarta {
+              width: 80%;
+              height: 300px;
+              gap: 20px;
+              .contact {
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                h4 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    .content {
+      h2 {
+        font-size: 25px;
+      }
+      .info {
+        .hotelImg {
+          height: 250px;
+        }
+        .infoDetails {
+          flex-direction: column;
+          gap: 40px;
+          .infoAppartment {
+            width: 100%;
+            .appartmentBlocks {
+              .appartmentBlock {
+                height: 120px;
+                a {
+                  font-size: 30px;
+                }
+                h6 {
+                  font-size: 10px;
+                }
+              }
+            }
+            .appartmentDes {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+          .infoAllMoney {
+            width: 40%;
+            .infoCarta {
+              width: 100%;
+              height: 300px;
+              gap: 20px;
+              .contact {
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                h4 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .main {
+    .content {
+      gap: 20px;
+      h2 {
+        font-size: 15px;
+      }
+      .info {
+        gap: 20px;
+        .hotelImg {
+          height: 150px;
+        }
+        .infoDetails {
+          flex-direction: column;
+          gap: 30px;
+          .infoAppartment {
+            width: 100%;
+            gap: 20px;
+            .mainAllText {
+              flex-direction: column;
+              align-items: start;
+              gap: 10px;
+              .mainText {
+                h6 {
+                  font-size: 12px;
+                }
+              }
+              .mainIcons {
+                a {
+                  font-size: 15px;
+                }
+              }
+            }
+            .appartmentBlocks {
+              .appartmentBlock {
+                height: 80px;
+                a {
+                  font-size: 20px;
+                }
+                h6 {
+                  font-size: 8px;
+                }
+              }
+            }
+            .appartmentDes {
+              h3 {
+                font-size: 15px;
+              }
+              p {
+                font-size: 13px;
+              }
+            }
+            .amenities {
+              h3 {
+                font-size: 15px;
+              }
+              .amenitiesDetails {
+                flex-direction: column;
+                gap: 5px;
+                .amenitiesBlocks {
+                  gap: 5px;
+                  .amenitiesBlock {
+                    a {
+                      font-size: 15px;
+                    }
+                    h6 {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+              button {
+                font-size: 12px;
+                padding-inline: 20px;
+                padding-block: 10px;
+              }
+            }
+            .hygiene {
+              h3 {
+                font-size: 15px;
+              }
+              .hygieneDetails {
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+                .hygieneBlocks {
+                  gap: 5px;
+                  .hygieneBlock {
+                    a {
+                      font-size: 15px;
+                    }
+                    h5 {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .infoAllMoney {
+            width: 60%;
+            .infoCarta {
+              width: 100%;
+              height: 250px;
+              gap: 20px;
+              h3 {
+                font-size: 15px;
+              }
+              .period {
+                font-size: 12px;
+              }
+              button {
+                height: 30px;
+                width: 70%;
+                font-size: 10px;
+              }
+              .contact {
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                h4 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .main {
+    .content {
+      gap: 20px;
+      h2 {
+        font-size: 15px;
+      }
+      .info {
+        gap: 20px;
+        .hotelImg {
+          flex-direction: column;
+          height: 100%;
+          img {
+            height: 100px;
+            width: 100%;
+          }
+          .hotelImgFood {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            height: 60px;
+            img {
+              width: 50%;
+              height: 100%;
+            }
+          }
+        }
+        .infoDetails {
+          flex-direction: column;
+          gap: 30px;
+          .infoAppartment {
+            width: 100%;
+            gap: 20px;
+            .mainAllText {
+              flex-direction: column;
+              align-items: start;
+              gap: 10px;
+              .mainText {
+                h6 {
+                  font-size: 12px;
+                }
+              }
+              .mainIcons {
+                a {
+                  font-size: 15px;
+                }
+              }
+            }
+            .appartmentBlocks {
+              .appartmentBlock {
+                height: 60px;
+                border-radius: 2px;
+                a {
+                  font-size: 15px;
+                }
+                h6 {
+                  font-size: 6px;
+                }
+              }
+            }
+            .appartmentDes {
+              h3 {
+                font-size: 15px;
+              }
+              p {
+                font-size: 10px;
+              }
+            }
+            .amenities {
+              h3 {
+                font-size: 15px;
+              }
+              .amenitiesDetails {
+                flex-direction: column;
+                gap: 5px;
+                .amenitiesBlocks {
+                  gap: 5px;
+                  .amenitiesBlock {
+                    a {
+                      font-size: 15px;
+                    }
+                    h6 {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+              button {
+                font-size: 12px;
+                padding-inline: 20px;
+                padding-block: 10px;
+              }
+            }
+            .hygiene {
+              h3 {
+                font-size: 15px;
+              }
+              .hygieneDetails {
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+                .hygieneBlocks {
+                  gap: 5px;
+                  .hygieneBlock {
+                    a {
+                      font-size: 15px;
+                    }
+                    h5 {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .infoAllMoney {
+            width: 70%;
+            .infoCarta {
+              width: 100%;
+              height: 250px;
+              gap: 20px;
+              h3 {
+                font-size: 15px;
+              }
+              .period {
+                font-size: 12px;
+              }
+              button {
+                height: 30px;
+                width: 70%;
+                font-size: 10px;
+              }
+              .contact {
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                h4 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

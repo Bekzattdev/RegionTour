@@ -1,0 +1,229 @@
+.main {
+  margin-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "Montserrat", sans-serif;
+    .map {
+      width: 100%;
+      height: 350px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .hotelText {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-size: 35px;
+        color: #004c60;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        color: #004c60;
+      }
+    }
+    .hotelBlocks {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      .hotelBlock {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px gray;
+        .like {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 40px;
+          color: white;
+        }
+        img {
+          width: 100%;
+          height: 70%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+        .hotelBlockText {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          padding-inline: 20px;
+          gap: 10px;
+          h5 {
+            font-weight: 400;
+            color: rgb(78, 77, 77);
+          }
+          .hotelBlockRating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            a {
+              color: yellow;
+              font-size: 20px;
+            }
+          }
+          .nextRead {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    .content {
+      .hotelBlocks {
+        gap: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .main {
+    .content {
+      .hotelBlocks {
+        gap: 20px;
+        .hotelBlock {
+          width: 300px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .main {
+    .content {
+      .map {
+        height: 300px;
+      }
+      .hotelText {
+        h1 {
+          font-size: 30px;
+        }
+        a {
+          font-size: 15px;
+        }
+      }
+      .hotelBlocks {
+        gap: 50px;
+        .hotelBlock {
+          width: 300px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    .content {
+      .map {
+        height: 280px;
+      }
+      .hotelText {
+        h1 {
+          font-size: 25px;
+        }
+        a {
+          font-size: 15px;
+        }
+      }
+      .hotelBlocks {
+        gap: 50px;
+        .hotelBlock {
+          width: 300px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .main {
+    .content {
+      .map {
+        height: 200px;
+      }
+      .hotelText {
+        h1 {
+          font-size: 20px;
+        }
+        a {
+          font-size: 15px;
+        }
+      }
+      .hotelBlocks {
+        gap: 50px;
+        .hotelBlock {
+          width: 300px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .main {
+    margin-top: 20px;
+    .content {
+      gap: 10px;
+      .map {
+        height: 100px;
+      }
+      .hotelText {
+        flex-direction: column;
+        align-items: start;
+        h1 {
+          font-size: 15px;
+        }
+        a {
+          font-size: 10px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+      }
+      .hotelBlocks {
+        gap: 20px;
+        .hotelBlock {
+          width: 250px;
+          height: 300px;
+          img {
+            height: 60%;
+          }
+          .like {
+            font-size: 25px;
+          }
+          .hotelBlockText {
+            gap: 5px;
+            .nextRead {
+              bottom: 5px;
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

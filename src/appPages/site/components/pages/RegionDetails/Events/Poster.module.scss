@@ -1,0 +1,375 @@
+.poster {
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    .posterText {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      h1 {
+        font-size: 60px;
+        color: #004c60;
+      }
+      .input {
+        width: 40%;
+        height: 40px;
+        background: #e5e4e9;
+        border-radius: 50px;
+        padding-inline: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a {
+          font-size: 20px;
+        }
+        input {
+          width: 70%;
+          height: 100%;
+          padding-inline: 10px;
+          border: none;
+          background: transparent;
+          font-size: 20px;
+        }
+      }
+    }
+    .calendar {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      .calendarMain {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h3 {
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #004c60;
+        }
+        a {
+          font-size: 20px;
+          color: #004c60;
+        }
+      }
+      .allCalendar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        .calendarDay {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          h4 {
+            font-size: 15px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+        .calendarNum {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+        }
+      }
+    }
+    .posterSelect {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        width: 30px;
+        height: 40px;
+        border: none;
+        background: #004c60;
+        color: white;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      select {
+        width: 120px;
+        height: 40px;
+        border: none;
+        background: rgba(128, 128, 128, 0.144);
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .ticket {
+        width: 100px;
+        height: 40px;
+        background: rgba(128, 128, 128, 0.144);
+        border-radius: 5px;
+        color: black;
+        font-weight: 600;
+      }
+    }
+    .posterBlocks {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      .posterBlock {
+        width: 340px;
+        height: 250px;
+        position: relative;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        img {
+          width: 100%;
+          height: 70%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+        .block {
+          position: absolute;
+          bottom: 90px;
+          left: 10px;
+          padding-block: 3px;
+          padding-inline: 10px;
+          border-radius: 2px;
+          align-items: center;
+          display: flex;
+          gap: 5px;
+          font-family: Arial, Helvetica, sans-serif;
+          background: rgba(0, 0, 0, 0.183);
+          color: white;
+        }
+        .posterBlockText {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 5px;
+          padding-inline: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          h4 {
+            font-size: 17px;
+          }
+          h5 {
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .poster {
+    .content {
+      .posterText {
+      }
+      .calendar {
+      }
+      .posterSelect {
+      }
+      .posterBlocks {
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .poster {
+    .content {
+      .posterText {
+      }
+      .calendar {
+      }
+      .posterSelect {
+      }
+      .posterBlocks {
+        gap: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .poster {
+    .content {
+      .posterText {
+        h1 {
+          font-size: 40px;
+        }
+      }
+      .calendar {
+      }
+      .posterSelect {
+      }
+      .posterBlocks {
+        gap: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .poster {
+    .content {
+      .posterText {
+        h1 {
+          font-size: 40px;
+        }
+      }
+      .calendar {
+        .allCalendar {
+          .calendarDay {
+            flex-wrap: wrap;
+          }
+        }
+      }
+      .posterSelect {
+      }
+      .posterBlocks {
+        gap: 20px;
+        .posterBlock {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .poster {
+    .content {
+      .posterText {
+        h1 {
+          font-size: 30px;
+        }
+        .input {
+          width: 60%;
+          height: 30px;
+          gap: 5px;
+          input {
+            font-size: 15px;
+            width: 80%;
+          }
+        }
+      }
+      .calendar {
+        .calendarMain {
+          a {
+            font-size: 15px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+        }
+        .allCalendar {
+          .calendarDay {
+            flex-wrap: wrap;
+          }
+          .calendarNum {
+            flex-wrap: wrap;
+          }
+        }
+      }
+      .posterSelect {
+        button {
+          height: 30px;
+          font-size: 10px;
+        }
+        select {
+          height: 30px;
+          font-size: 10px;
+          width: 100px;
+        }
+        .ticket {
+          height: 30px;
+          font-size: 10px;
+          width: 70px;
+        }
+      }
+      .posterBlocks {
+        gap: 20px;
+        .posterBlock {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .poster {
+    .content {
+      .posterText {
+        h1 {
+          font-size: 20px;
+        }
+        .input {
+          width: 60%;
+          height: 20px;
+          gap: 5px;
+          a {
+            font-size: 15px;
+          }
+          input {
+            font-size: 10px;
+            width: 80%;
+          }
+        }
+      }
+      .calendar {
+        .calendarMain {
+          a {
+            font-size: 10px;
+          }
+          h3 {
+            font-size: 10px;
+          }
+        }
+        .allCalendar {
+          .calendarDay {
+            flex-wrap: wrap;
+          }
+          .calendarNum {
+            flex-wrap: wrap;
+          }
+        }
+      }
+      .posterSelect {
+        button {
+          height: 30px;
+          font-size: 10px;
+        }
+        select {
+          height: 30px;
+          font-size: 10px;
+          width: 100px;
+        }
+        .ticket {
+          height: 30px;
+          font-size: 10px;
+          width: 70px;
+        }
+      }
+      .posterBlocks {
+        gap: 20px;
+        .posterBlock {
+          width: 250px;
+          height: 200px;
+          .posterBlockText {
+            h4 {
+              font-size: 15px;
+
+            }
+            h5 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

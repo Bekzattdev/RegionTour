@@ -38,7 +38,25 @@
       font-size: 80px;
       display: flex;
       text-align: center;
+      animation: typing 4s steps(30, end) infinite;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      &::after { 
+        content: "|";
+        position: absolute;
+        right: 0;
+      }
     }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 65%;
+      }
+    }
+
     .inputs {
       display: flex;
       align-items: center;
@@ -206,6 +224,7 @@
 }
 @media (max-width: 321px) {
   .welcome {
+    margin-top: -10px;
     height: 160px;
     .logo {
       img {

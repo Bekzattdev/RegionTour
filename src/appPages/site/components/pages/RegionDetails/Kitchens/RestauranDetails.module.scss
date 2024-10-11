@@ -1,0 +1,543 @@
+.main {
+  .content {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    h2 {
+      font-size: 30px;
+      color: #004c60;
+    }
+    .restauranImg {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      img {
+        width: 40%;
+        object-fit: cover;
+      }
+      .restauranImgFood {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 30%;
+        img {
+          width: 100%;
+          height: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+    .restauranDetails {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .restauranBlockRating {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 30%;
+        height: 450px;
+        border: 2px solid rgba(128, 128, 128, 0.231);
+        padding: 20px;
+        justify-content: space-between;
+        h3 {
+          font-size: 25px;
+        }
+        .restauranBlockReviews {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h4 {
+            font-size: 30px;
+          }
+          a {
+            font-size: 30px;
+            color: yellow;
+          }
+          h5 {
+            font-size: 15px;
+          }
+        }
+        .restauranNumber {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+          h5 {
+            font-size: 15px;
+            font-weight: 500;
+            span {
+              font-weight: 600;
+            }
+          }
+          hr {
+            width: 100%;
+          }
+        }
+        .restauranRatingDetails {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+          .restauranRatingBlock {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            h4 {
+              width: 35%;
+              font-size: 17px;
+              font-weight: 500;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+            a {
+              color: yellow;
+              font-size: 20px;
+            }
+            .restauranRatingLike {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              a {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      .restauranBlockText {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 30%;
+        height: 450px;
+        border: 2px solid rgba(128, 128, 128, 0.231);
+        padding: 20px;
+        justify-content: space-between;
+        h3 {
+          font-size: 25px;
+        }
+        .textBlock {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 10px;
+          h5 {
+            font-weight: 500;
+            font-size: 15px;
+          }
+        }
+      }
+      .restauranBlockLocation {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 30%;
+        height: 450px;
+        border: 2px solid rgba(128, 128, 128, 0.231);
+        padding: 20px;
+        justify-content: space-between;
+        h3 {
+          font-size: 25px;
+        }
+        img {
+          width: 100%;
+        }
+        .location {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          a {
+            font-size: 20px;
+          }
+          h5 {
+            font-size: 15px;
+            font-weight: 500;
+            width: 80%;
+          }
+        }
+        .website {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          a {
+            font-size: 20px;
+          }
+          h5 {
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+        .phone {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          a {
+            font-size: 20px;
+          }
+          h5 {
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+        h6 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    .content {
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .main {
+    .content {
+      .restauranImg {
+        height: 350px;
+      }
+      .restauranDetails {
+        .restauranBlockRating {
+          width: 33%;
+          .restauranRatingDetails {
+            .restauranRatingBlock {
+              h4 {
+                width: 50%;
+              }
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .restauranBlockText {
+          width: 33%;
+        }
+        .restauranBlockLocation {
+          width: 33%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .main {
+    .content {
+      .restauranImg {
+        height: 350px;
+      }
+      .restauranDetails {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 30px;
+        .restauranBlockRating {
+          width: 40%;
+          .restauranBlockReviews {
+            h4 {
+              font-size: 20px;
+            }
+            a {
+              font-size: 20px;
+            }
+            h5 {
+              font-size: 15px;
+            }
+          }
+          .restauranRatingDetails {
+            .restauranRatingBlock {
+              h4 {
+                width: 50%;
+              }
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .restauranBlockText {
+          width: 40%;
+        }
+        .restauranBlockLocation {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    .content {
+      h2 {
+        font-size: 25px;
+      }
+      .restauranImg {
+        height: 300px;
+      }
+      .restauranDetails {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 30px;
+        .restauranBlockRating {
+          width: 45%;
+          .restauranBlockReviews {
+            h4 {
+              font-size: 20px;
+            }
+            a {
+              font-size: 20px;
+            }
+            h5 {
+              font-size: 15px;
+            }
+          }
+          .restauranRatingDetails {
+            .restauranRatingBlock {
+              h4 {
+                width: 50%;
+              }
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .restauranBlockText {
+          width: 45%;
+        }
+        .restauranBlockLocation {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .main {
+    .content {
+      gap: 10px;
+      h2 {
+        font-size: 15px;
+      }
+      .restauranImg {
+        height: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: 150px;
+        }
+        .restauranImgFood {
+          flex-direction: row;
+          width: 100%;
+          height: 100px;
+          img {
+            height: 100%;
+            width: 50%;
+          }
+        }
+      }
+      .restauranDetails {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 10px;
+        .restauranBlockRating {
+          width: 100%;
+          height: 350px;
+          h3 {
+            font-size: 20px;
+          }
+          .restauranBlockReviews {
+            h4 {
+              font-size: 20px;
+            }
+            a {
+              font-size: 20px;
+            }
+            h5 {
+              font-size: 15px;
+            }
+          }
+          .restauranNumber {
+            h4 {
+              font-size: 15px;
+            }
+          }
+          .restauranRatingDetails {
+            .restauranRatingBlock {
+              h4 {
+                width: 50%;
+              }
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .restauranBlockText {
+          width: 100%;
+          height: 350px;
+          h3 {
+            font-size: 20px;
+          }
+        }
+        .restauranBlockLocation {
+          width: 100%;
+          height: 350px;
+          h3 {
+            font-size: 20px;
+          }
+          .location {
+            h5 {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .main {
+    .content {
+      gap: 10px;
+      h2 {
+        font-size: 17px;
+      }
+      .restauranImg {
+        height: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: 100px;
+        }
+        .restauranImgFood {
+          flex-direction: row;
+          width: 100%;
+          height: 50px;
+          img {
+            height: 100%;
+            width: 50%;
+          }
+        }
+      }
+      .restauranDetails {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+        .restauranBlockRating {
+          width: 100%;
+          height: 300px;
+          h3 {
+            font-size: 15px;
+          }
+          .restauranBlockReviews {
+            h4 {
+              font-size: 15px;
+            }
+            a {
+              font-size: 10px;
+            }
+            h5 {
+              font-size: 10px;
+            }
+          }
+          .restauranNumber {
+            h5 {
+              font-size: 10px;
+            }
+            h4 {
+              font-size: 10px;
+            }
+          }
+          .restauranRatingDetails {
+            gap: 10px;
+            .restauranRatingBlock {
+              h4 {
+                width: 40%;
+                font-size: 10px;
+              }
+              a {
+                font-size: 10px;
+              }
+            }
+            .restauranRatingLike {
+              h5 {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        .restauranBlockText {
+          width: 100%;
+          height: 300px;
+          h3 {
+            font-size: 15px;
+          }
+          .textBlock {
+            h4 {
+              font-size: 10px;
+            }
+            h5 {
+              font-size: 8px;
+            }
+          }
+        }
+        .restauranBlockLocation {
+          width: 100%;
+          height: 300px;
+          h3 {
+            font-size: 15px;
+          }
+          .location {
+            a {
+              font-size: 10px;
+            }
+            h5 {
+              font-size: 10px;
+              width: 100%;
+            }
+          }
+          .website {
+            a {
+              font-size: 10px;
+            }
+            h5 {
+              font-size: 10px;
+            }
+          }
+          .phone {
+            a {
+              font-size: 10px;
+            }
+            h5 {
+              font-size: 10px;
+            }
+          }
+          h6 {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}

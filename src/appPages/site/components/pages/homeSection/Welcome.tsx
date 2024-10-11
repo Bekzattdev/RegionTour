@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import scss from "./Welcome.module.scss";
 import { FiSearch } from "react-icons/fi";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi"; 
 import vk from "../../../../../assets/img/vklogo.png";
 import insta from "../../../../../assets/img/instalogo.svg";
 import email from "../../../../../assets/img/emaillogo.webp";

@@ -1,0 +1,141 @@
+.block {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 370px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px gray;
+  position: relative;
+  gap: 20px;
+  .favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    a {
+      font-size: 40px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .favoriteText {
+    padding-inline: 10px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    .favoriteRating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      h4 {
+        font-weight: 600;
+      }
+      a {
+        color: yellow;
+      }
+      h5 {
+        font-size: 12px;
+        color: gray;
+        font-weight: 400;
+      }
+    }
+  }
+  .detail {
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+  .block {
+    width: 300px;
+  }
+}
+@media (max-width: 920px) {
+  .block {
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .block {
+    width: 300px;
+  }
+}
+@media (max-width: 431px) {
+  .block {
+    width: 300px;
+    height: 300px;
+    .favorite {
+      a {
+        font-size: 30px;
+      }
+    }
+    img {
+      height: 60%;
+    }
+    .favoriteText {
+      h2 {
+        font-size: 20px;
+      }
+      .favoriteRating {
+        h4 {
+          font-size: 15px;
+        }
+        h5 {
+          font-size: 15px;
+        }
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+    .detail {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 321px) {
+  .block {
+    width: 300px;
+    height: 250px;
+    .favorite {
+      a {
+        font-size: 25px;
+      }
+    }
+    img {
+      height: 60%;
+    }
+    .favoriteText {
+      h2 {
+        font-size: 15px;
+      }
+      .favoriteRating {
+        h4 {
+          font-size: 10px;
+        }
+        h5 {
+          font-size: 10px;
+        }
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+    .detail {
+      font-size: 15px;
+    }
+  }
+}
