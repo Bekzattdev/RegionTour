@@ -1,5 +1,3 @@
-import HomePage from "@/appPages/site/components/pages/HomePage/HomePage";
-import React from "react";
-
+import HomePage from "@/appPages/site/components/pages/HomePage";
 const page = () => <HomePage />;
 export default page;
