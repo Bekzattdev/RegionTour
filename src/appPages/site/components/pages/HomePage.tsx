@@ -1,13 +1,20 @@
 "use client";
 import React from "react";
-import Welcome from "./homeSection/Welcome";
 import RoutesPage from "./routesSection/RoutesPage";
+import WelcomeCity from "./HomePage/WelcomeCity";
+import WelcomeAttractions from "./HomePage/WelcomeAttractions";
+import Culture from "./HomePage/Culture";
+import Carta from "./HomePage/Carta";
+import Welcome from "./HomePage/Welcome";
 
 const HomePage = () => {
   return (
     <>
-      {/* <Welcome /> */}
-      <RoutesPage />
+      <Welcome />
+      <WelcomeCity />
+      <WelcomeAttractions />
+      <Culture />
+      <Carta />
     </>
   );
 };

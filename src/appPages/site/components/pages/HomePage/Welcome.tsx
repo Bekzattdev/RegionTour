@@ -1,15 +1,15 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import scss from "./Welcome.module.scss";
 import { FiSearch } from "react-icons/fi";
-import { FiArrowUpRight } from "react-icons/fi"; 
+import { FiArrowUpRight } from "react-icons/fi";
 import vk from "../../../../../assets/img/vklogo.png";
 import insta from "../../../../../assets/img/instalogo.svg";
 import email from "../../../../../assets/img/emaillogo.webp";
 import facebook from "../../../../../assets/img/facebooklogo.svg";
+import { TypeWriterText } from "../text/TyperWritter";
 
 const Welcome = () => {
   const [burger, setBurger] = useState(false);
@@ -23,9 +23,9 @@ const Welcome = () => {
           <Image src={email} alt="" className={scss.email} />
         </div>
         <div className={scss.content}>
-          <h1>
-            Welcome to the amazing <br /> Kyrgyzstan!
-          </h1>
+          <div className={scss.title}>
+            <TypeWriterText />
+          </div>
           <div className={scss.inputs}>
             <div className={scss.input}>
               <a>
