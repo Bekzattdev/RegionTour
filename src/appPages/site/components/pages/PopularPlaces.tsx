@@ -1,7 +1,5 @@
 "use client";
 import scss from "./PopularPlaces.module.scss";
-import cholpon from "../../RegionSection/assets/image/talasMain.png";
-import Image from "next/image";
 import { IoHeartCircleSharp } from "react-icons/io5";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { useState } from "react";

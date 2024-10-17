@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import React, { useState } from "react";
 import scss from "./Header.module.scss";
@@ -21,11 +20,11 @@ const Header = () => {
     },
     {
       name: "Culture",
-      href: "/hgck",
+      href: "/culture",
     },
     {
       name: "Gallerey",
-      href: "/kjn",
+      href: "/gallery",
     },
     {
       name: "Routes",
@@ -75,7 +74,7 @@ const Header = () => {
                   <div className={scss.components}>
                     <Link href="/">Home</Link>
                     <Link href="/regions/talas">Regions</Link>
-                    <Link href="/">Culture</Link>
+                    <Link href="/culture">Culture</Link>
                     <Link href="/">Gallery</Link>
                     <Link href="/">Routes</Link>
                   </div>

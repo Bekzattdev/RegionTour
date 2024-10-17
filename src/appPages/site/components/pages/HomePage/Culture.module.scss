@@ -18,52 +18,56 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
       gap: 50px;
-      .cultureBlock {
+      .cultureBlocks {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 40px;
-        img {
-          width: 50%;
-          height: 450px;
-          border-radius: 10px;
-        }
-        .cultureBlockText {
-          width: 25%;
-          height: 450px;
-          background: white;
-          border-radius: 10px;
-          padding: 20px;
+        width: 100%;
+        .cultureBlock {
           display: flex;
-          align-items: start;
-          flex-direction: column;
-          gap: 20px;
-          position: relative;
-          h3 {
-            font-size: 20px;
-            color: #004a60;
-          }
-          p {
-            font-size: 15px;
-            line-height: 20px;
-          }
-          button {
-            width: 100px;
-            height: 30px;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+          img {
+            width: 50%;
+            height: 450px;
             border-radius: 10px;
-            background: #004a60;
-            color: white;
+          }
+          .cultureBlockText {
+            width: 25%;
+            height: 450px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border: none;
-            font-size: 15px;
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            h3 {
+              font-size: 20px;
+              color: #004a60;
+            }
+            p {
+              font-size: 15px;
+              line-height: 20px;
+            }
+            button {
+              width: 100px;
+              height: 30px;
+              border-radius: 10px;
+              background: #004a60;
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              border: none;
+              font-size: 15px;
+              position: absolute;
+              bottom: 20px;
+              right: 20px;
+            }
           }
         }
       }

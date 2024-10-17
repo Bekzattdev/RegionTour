@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation";
 const ChuiMain = () => {
   const router = useRouter();
   const main = {
-    title: "Chyi",
+    title: "Chui",
     img: "https://s3-alpha-sig.figma.com/img/8839/f257/1689035837b66381ea092d3bfb34a124?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XH5qu6rCZd81RHTll-yGkl78zGFxiER-r12NVaTy~GYunGgDL~zheBUCbPYEALRbeFenxROSOiN9Sw3hhMqMPmS8r6AbpUO7WPCODBw-4WgE87RgMIC9VRS-duB5JGjJYtWhVvaa-JJ8z4BEFr-es0FHfrAh0-iEIoNwp0lAdxpwObeJyZRR1RgGULC3gXw~HOA0YkR9aWHZ66SjYb~oI6w3PE096QJzn0-jibKpzh4BwCaUkOzQrFtabU3lf3UfYeViA2dkXwfVhlqRQjCEbRC8dcdh3Kdbi0LSEBLAmSu67H9QorUL4l1EE2A4iDLIACe33Tl-bDyBsTy3b8fZNQ__",
     description:
       "Osh is the second largest city in Kyrgyzstan, located in the Fergana Valley in the south of the country and often referred to as the “capital of the south.” It is the oldest city in the country (estimated to be over 3,000 years old) and has served as the administrative center of the Osh region since 1939. The city s ethnically mixed population as of 2021 was 322,164, including Kyrgyz, Uzbeks, Ukrainians, Koreans, and other smaller ethnic groups. It is located about 5 km from the Kyrgyz-Uzbek border.",
@@ -46,7 +46,7 @@ const ChuiMain = () => {
               onClick={() => router.push("/regions/chui")}
             >
               <Image src={chuiImg} alt="" />
-              <h3>Chyi</h3>
+              <h3>Chui</h3>
             </div>
             <div
               className={scss.cartaActions}

@@ -1,0 +1,65 @@
+.main {
+  margin-top: 100px;
+  .cultureAll {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    .cultureHeader {
+      background-image: url("../cultureData/cultureImages/cultureHeaderPng.png");
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      h1 {
+        font-size: 60px;
+        font-weight: 600;
+        color: #004c60;
+      }
+      p {
+        width: 60%;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+    }
+    .cultureCard {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+        font-family: "Montserrat", sans-serif,;
+        .imageContainer {
+            background-image: url('../cultureData/cultureImages/moneyBg.png');
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-block: 50px;
+            img {
+                width: 80%;
+            }
+        }
+        .contentContainer {
+            width: 55%;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+            h2 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 20px;
+                width: 90%;
+                line-height: 30px;
+            }
+        }
+    }
+  }
+}
