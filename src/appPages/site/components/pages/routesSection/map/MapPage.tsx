@@ -2,7 +2,6 @@ import scss from "./MapPage.module.scss";
 const MapPage = () => {
   return (
     <div className={scss.MapPage}>
-      <h1>Google map</h1>
       <div className={scss.content}>
         <div className={scss.map}>
           <>
