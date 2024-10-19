@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { kyrgyzCulture } from "../cultureData/cultureData";
+import { kyrgyzCulture } from "../../../pages/culturePage/cultureData/cultureData";
 import scss from "./Currency.module.scss";
 
 const Currency: React.FC = () => {
@@ -23,12 +23,12 @@ const Currency: React.FC = () => {
               <div className={scss.contentContainer}>
                 <h2>{instrument.title}</h2>
                 <p>
-					{instrument.description
-                  .split("\n\n")
-                  .map((paragraph, pIndex) => (
-					  <p key={pIndex}>{paragraph}</p>
-					))}
-					</p>
+                  {instrument.description
+                    .split("\n\n")
+                    .map((paragraph, pIndex) => (
+                      <p key={pIndex}>{paragraph}</p>
+                    ))}
+                </p>
               </div>
             </div>
           ))}
