@@ -1,11 +1,4 @@
-import Currency from '@/appPages/site/components/pages/culturePage/Currency/CultureCurrency'
+import Currency from "@/appPages/site/components/pages/culturePage/currency/CultureCurrency";
 
-const page = () => {
-	return (
-		<div>
-			<Currency />
-		</div>
-	)
-}
-
-export default page
+const page = () => <Currency />;
+export default page;

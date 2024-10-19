@@ -26,7 +26,7 @@ const Currency: React.FC = () => {
                   {instrument.description
                     .split("\n\n")
                     .map((paragraph, pIndex) => (
-                      <p key={pIndex}>{paragraph}</p>
+                      <span key={pIndex}>{paragraph}</span>
                     ))}
                 </p>
               </div>
